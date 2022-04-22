@@ -1,0 +1,112 @@
+//Function that sets the transaction currency
+if(!function_exists('transCurrency')){
+    /**
+     * @param $country
+     * @return string
+     */
+    function transCurrency($country): string
+    {
+        switch ($country){
+            case 'Uganda':
+                $currency = 'UGX';
+                break;
+            case 'Kenya':
+                $currency = 'KES';
+                break;
+            case 'Tanzania':
+                $currency = 'TZS';
+                break;
+            case 'Rwanda':
+                $currency = 'RWF';
+                break;
+            case 'South Africa':
+                $currency = 'ZAR';
+                break;
+            case 'Ghana':
+                $currency = 'GHS';
+                break;
+            case 'Nigeria':
+                $currency = 'NGN';
+                break;
+            case 'Ireland':
+            case 'Austria':
+            case 'Belgium':
+            case 'Cyprus North':
+            case 'Cyprus South':
+            case 'Eritrea':
+            case 'Estonia':
+            case 'Finland':
+            case 'France':
+            case 'French Guiana':
+            case 'Germany':
+            case 'Greece':
+            case 'Guadeloupe':
+            case 'Italy':
+            case 'Malta':
+            case 'Luxembourg':
+            case 'Martinique':
+            case 'Mayotte':
+            case 'Monaco':
+            case 'Netherlands':
+            case 'Portugal':
+            case 'Reunion':
+            case 'San Marino':
+            case 'Slovak Republic':
+            case 'Slovenia':
+            case 'Spain':
+            case 'Vatican City':
+            case 'Andorra':
+                $currency = 'EUR';
+                break;
+            case 'United Kingdom':
+                $currency = 'GBP';
+                break;
+            case 'Kiribati':
+            case 'Nauru':
+            case 'Norfolk Islands':
+            case 'Tuvalu':
+            case 'Australia':
+                $currency = 'AUD';
+                break;
+            case 'Canada':
+                $currency = 'CAD';
+                break;
+            case 'Ethiopia':
+                $currency = 'ETB';
+                break;
+            case 'Israel':
+                $currency = 'ILS';
+                break;
+            case 'Japan':
+                $currency = 'JPY';
+                break;
+            case 'Malawi':
+                $currency = 'MWK';
+                break;
+            case 'Brazil':
+                $currency = 'BRL';
+                break;
+            case 'Sierra Leone':
+                $currency = 'SLL';
+                break;
+            case 'Central African Republic':
+            case 'Republic Of The Congo':
+            case 'Equatorial Guinea':
+            case 'Gabon':
+            case 'Cameroon':
+            case 'Burkina Faso':
+            case 'Benin':
+            case 'Guinea - Bissau':
+            case 'Mali':
+            case 'Niger':
+            case 'Senegal':
+            case 'Togo':
+                $currency = 'XOF';
+                break;
+            default:
+                $currency = 'USD';
+                break;
+        }
+        return $currency;
+    }
+}
